@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.media.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="frame" prefHeight="200.0" prefWidth="636.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.br.edu.ifms.lp2.ui.PrincipalFXMLController">
+   <children>
+      <HBox fx:id="ss" layoutX="55.0" layoutY="75.0" prefHeight="50.0" prefWidth="534.0" AnchorPane.bottomAnchor="75.0" AnchorPane.leftAnchor="55.0" AnchorPane.rightAnchor="47.0" AnchorPane.topAnchor="75.0">
+         <children>
+            <VBox prefHeight="44.0" prefWidth="471.0">
+               <children>
+                  <ProgressBar fx:id="barraProgresso" prefHeight="8.0" prefWidth="468.0" progress="0.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ProgressBar>
+                  <HBox prefHeight="20.0" prefWidth="471.0">
+                     <children>
+                        <Label fx:id="tempo" text="00:00">
+                           <HBox.margin>
+                              <Insets right="90.0" />
+                           </HBox.margin>
+                        </Label>
+                        <Label fx:id="tempoFinal" text="00:00">
+                           <HBox.margin>
+                              <Insets left="300.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="botaoAbrir" mnemonicParsing="false" prefHeight="23.0" prefWidth="24.0" text="...">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Label fx:id="labelMusica" layoutX="14.0" layoutY="14.0" text="Music Player" />
+      <HBox layoutX="127.0" layoutY="132.0" prefHeight="40.0" prefWidth="228.0">
+         <children>
+            <Button fx:id="prev" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="127.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@skip-previous-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" top="3.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoPlay" mnemonicParsing="false" prefHeight="28.0" prefWidth="38.0">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@play-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="botaoPause" mnemonicParsing="false" prefHeight="30.0" prefWidth="47.0">
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@pause-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
+            <Button fx:id="stop" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="37.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@stop-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="next" mnemonicParsing="false" prefHeight="30.0" prefWidth="44.0">
+               <graphic>
+                  <ImageView fitHeight="26.0" fitWidth="27.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@skip-next-circle.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" top="3.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="aleatorio" mnemonicParsing="false">
+               <graphic>
+                  <ImageView fitHeight="33.0" fitWidth="26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@shuffle-variant.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" top="3.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="repeat" mnemonicParsing="false" prefHeight="35.0" prefWidth="41.0">
+               <graphic>
+                  <ImageView fitHeight="24.0" fitWidth="129.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@repeat.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <HBox.margin>
+                  <Insets left="5.0" top="3.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <ImageView fx:id="imagemMusica" fitHeight="60.0" fitWidth="119.0" layoutX="259.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
